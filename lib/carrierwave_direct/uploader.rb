@@ -75,7 +75,7 @@ module CarrierWaveDirect
           'conditions' => conditions + [
             {"bucket" => fog_directory},
             {"acl" => acl},
-            {"success_action_status" => '200'},
+            {"success_action_status" => '201'},
             ["content-length-range", options[:min_file_size], options[:max_file_size]]
           ]
         }.to_json
