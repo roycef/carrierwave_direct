@@ -34,6 +34,10 @@ module CarrierWaveDirect
       UUID.generate
     end
 
+    def success_action_status
+      200
+    end
+
     def key=(k)
       @key = k
       update_version_keys(:with => @key)
