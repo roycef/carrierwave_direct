@@ -35,7 +35,7 @@ module CarrierWaveDirect
     end
 
     def success_action_status
-      200
+      201
     end
 
     def key=(k)
